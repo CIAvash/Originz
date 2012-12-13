@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html contextmenu="src-menu">
+  <head>
+    <meta charset="utf-8">
+    <title>Origins</title>
+    <link href="css/prism.css" rel="stylesheet">
+    <link href="css/alertify.core.css" rel="stylesheet">
+    <link href="css/alertify.default.css" rel="stylesheet">
+    <link href="fancybox/jquery.fancybox.css" rel="stylesheet">
+    <script src="js/prism.js" data-manual></script>
+    <script src="js/prism-linewrapper.js"></script>
+    <script src="js/page-script.js"></script>
+  </head>
+  <body>
+    <div id="dashboard">
+      <select id="src-list"></select>
+      <div id="src-options">
+        <p>
+          <input id="wrap-checkbox" type="checkbox">
+          <label for="wrap-checkbox">Wrap long lines</label>
+        </p>
+        <p>
+          <input id="beautify-checkbox" type="checkbox">
+          <label for="beautify-checkbox">Beautify</label>
+        </p>
+        <div><a title="HTTP Headers" href="#src-info" class="fancybox">Source Info</a></div>
+        <div id="src-info"></div>
+      </div>
+      <div id="src-details"></div>
+    </div>
+    <pre><code id="source"></code></pre>
+  </body>
+</html>

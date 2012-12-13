@@ -1,0 +1,147 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    counter-reset: line;
+    display: none;
+    direction: ltr;
+}
+
+#dashboard {
+    box-shadow: 0 0 5px Black;
+    z-index: 1000;
+    padding: 10px;
+    color: black;
+    background: #f1f1f1;
+    border-radius: 0px 0px 15px 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 478px;
+    position: fixed;
+    top: -140px;
+    left: 0;
+    transition: top 1s;
+}
+
+#src-options, #src-details {
+    font-size: 13px;
+}
+
+#src-list {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+#src-list .dd-selected, #src-list .dd-option {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+#src-list .dd-desc {
+    text-overflow: ellipsis;
+}
+
+#src-options {
+    display: inline-block;
+    vertical-align: top;
+}
+
+#src-options p {
+    margin-bottom: 3px;
+}
+
+#src-options input, #src-options label {
+    vertical-align: middle;
+}
+
+#src-options div {
+    margin-top: 10px;
+}
+
+a.fancybox {
+    border: 1px solid black;
+    border-right: none;
+    border-left: none;
+    padding: 2px 0;
+    text-decoration: none !important;
+    color: black;
+}
+
+a.fancybox:hover {
+    background: White;
+}
+
+#src-info {
+    display: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+}
+
+#src-info div {
+    margin-bottom: 5px;
+}
+
+#src-details {
+    margin-top: 6px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+#src-url {
+    color: black;
+    text-decoration: none;
+}
+
+#src-url:hover {
+    text-decoration: underline;
+}
+
+#total-lines {
+    margin-top: 5px;
+}
+
+body > pre {
+    margin: 0 !important;
+    padding: 0 !important;
+    overflow: visible !important;
+}
+
+#source {
+    display: block;
+    position: relative;
+    z-index: 999 !important;
+    margin-left: 62px;
+}
+
+span.line {
+    display: inline-block;
+}
+
+span.line:before {
+    content: counter(line) ' ';
+    counter-increment: line;
+    color: Sienna;
+    /* background: #EAE1DC; */
+    background: linear-gradient(to right, rgba(234,225,220,1) 0%,rgba(234,225,220,1) 85%,rgba(234,225,220,0) 86%,rgba(234,225,220,0) 100%);
+    display: inline-block;
+    text-align: right;
+    width: 62px;
+    margin-left: -62px;
+}
+
+#highlight-line {
+    position: absolute;
+    right: 0;
+    left: 0;
+    white-space: pre;
+    transition: background-color 2s;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.wrap-lines {
+    word-wrap: break-word !important;
+    white-space: pre-wrap !important;
+}

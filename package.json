@@ -1,0 +1,30 @@
+{
+    "name": "origins", 
+    "license": "MPL 2.0", 
+    "author": "Siavash Askari Nasr", 
+    "version": "0.1", 
+    "fullName": "Origins", 
+    "id": "jid1-i87i9ustw9g5MA", 
+    "description": "A source viewer that enables you to view not only page's HTML source but also style sheets and scripts.",
+    "preferences": [
+        {
+            "type": "bool",
+            "name": "wrapLongLines",
+            "value": false,
+            "title": "Wrap long lines"
+        },
+        {
+            "type": "bool",
+            "name": "beautify",
+            "value": false,
+            "title": "Beautify"
+        },
+        {
+            "type": "string",
+            "name": "viewSourceHotkey",
+            "value": "g",
+            "title": "Hotkey for viewing page source",
+            "description": "Ctrl+Shift+[a-z, 0-9]"
+        }
+    ]
+}
