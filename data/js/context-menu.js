@@ -1,5 +1,5 @@
 self.on("context", function(node) {
-    if (document.URL === 'resource://jid1-i87i9ustw9g5ma-at-jetpack/origins/data/index.html')
+    if (document.URL === 'resource://jid1-1rwfet7lgmysbq-at-jetpack/originz/data/index.html')
         return false;
     pageData = findSources();
     if(pageData.srcList.length > 0) {
