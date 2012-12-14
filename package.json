@@ -1,10 +1,10 @@
 {
-    "name": "origins", 
+    "name": "originz", 
     "license": "MPL 2.0", 
     "author": "Siavash Askari Nasr", 
     "version": "0.1", 
-    "fullName": "Origins", 
-    "id": "jid1-i87i9ustw9g5MA", 
+    "fullName": "Originz", 
+    "id": "jid1-1Rwfet7lgMYsBQ", 
     "description": "A source viewer that enables you to view not only page's HTML source but also style sheets and scripts.",
     "preferences": [
         {

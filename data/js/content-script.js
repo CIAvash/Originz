@@ -12,7 +12,7 @@ let origins;
 self.port.on('data', function(data) {
     origins = data;
 
-    $('title').text('Origins - ' + origins.url);
+    $('title').text('Originz - ' + origins.url);
 
     self.port.emit('request', origins.url);
 });

@@ -1,12 +1,12 @@
-Origins
+Originz
 =======
 
 Description
 -----------
 
-Origins is a Firefox add-on for viewing page sources, including HTML, style sheets and scripts. It uses [Prism](http://prismjs.com/) syntax highlighter and has options for beautifying(unminifying) source code and wrapping long lines.
+Originz is a Firefox add-on for viewing page sources, including HTML, style sheets and scripts. It uses [Prism](http://prismjs.com/) syntax highlighter and has options for beautifying(unminifying) source code and wrapping long lines.
 
-When you right-click on a page, you can see a list of sources in the Origins menu. Each item(source) has an icon indicating its type. By clicking on a source, you can view it in a new tab.
+When you right-click on a page, you can see a list of sources in the Originz menu. Each item(source) has an icon indicating its type. By clicking on a source, you can view it in a new tab.
 
 There is a dashboard which will be visible whenever you move your mouse cursor to the top of the page.
 
