@@ -87,11 +87,12 @@ document.defaultView.addEventListener('message', function(e) {
         );
 
         $(window).resize(function() {
-            $('.dd-options').css('max-height', $(this).height() - 100);
+            let $this = $(this);
+            $('.dd-options').css('max-height', $this.height() - 100);
             if(mouseIn)
                 dashboard.css({
                     'top': '0',
-                    'left': $(this).width()/2 - dashboard.width()/2
+                    'left': $this.width()/2 - dashboard.width()/2
                 });
         });
 
@@ -143,7 +144,7 @@ document.defaultView.addEventListener('message', function(e) {
                                  '</menu></menu>'
                                 );
             $('#src-menu menu menuitem').click(function() {
-                origins.url = $(this).attr('data-url');
+                origins.url = $(this).data('url');
                 requestSource();
             });
         }
@@ -161,10 +162,14 @@ document.defaultView.addEventListener('message', function(e) {
 
         $('.dd-options').css('max-height', $(window).height() - 100);
 
-        srcDetails.append('<a id="src-url" href="' + escapeHTML(origins.url) + '" target="_blank">' +
-                          escapeHTML(origins.url) +
-                          '</a>'
-                         );
+        srcDetails.append(
+            $('<a>', {
+                id: 'src-url',
+                href: origins.url,
+                target: '_blank',
+                text: origins.url
+            })
+        );
 
         // Initialize fancybox
         $('.fancybox').fancybox();
@@ -197,7 +202,13 @@ document.defaultView.addEventListener('message', function(e) {
         $('body').css('background-color', sourceCode.parent().css('background-color'));
         
         totalLines = $('.line').length;
-        srcDetails.append('<div id="total-lines">Lines: ' + escapeHTML(totalLines.toString()) + '</div>');
+
+        srcDetails.append(
+            $('<div>', {
+                id: 'total-lines',
+                text: 'Lines: ' + totalLines
+            })
+        );
         
         sourceCode.append('<div id="highlight-line"></div>');
         hline = $('#highlight-line');

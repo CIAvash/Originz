@@ -1,4 +1,4 @@
-const srcNamePatt = /.+\/([^\/]+)\/?$/;
+const srcNamePatt = /.+\/([^\/?#]+).*/;
 
 function findSources() {
     let srcList = new Array;
