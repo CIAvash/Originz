@@ -35,7 +35,7 @@ From the Preferences/Options, you can enable/disable `Wrap Long Lines` and `Beau
 Notes
 -----
 
-* Highlighting large codes and inserting them to page can be slow. But since async in Prism is enabled and Web Workers are used, highlighting the code wont block the UI, but inserting it will.
+* Highlighting large codes and inserting them to page can be slow. But since async in Prism is enabled and Web Workers are used, highlighting the code won't block the UI, but inserting it will.
 * Beautifying large codes can be slow and block the UI or even make the browser unresponsive. In this case you may want to wait, continue loading script if you are asked to stop it, or stop it.
 
 Libraries and icons used in this project
