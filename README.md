@@ -1,5 +1,5 @@
-Originz
-=======
+[Originz](https://addons.mozilla.org/en-US/firefox/addon/originz/)
+==================================================================
 
 Description
 -----------
