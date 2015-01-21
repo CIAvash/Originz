@@ -2,7 +2,7 @@
     "name": "originz", 
     "license": "MPL 2.0", 
     "author": "Siavash Askari Nasr", 
-    "version": "0.1.2", 
+    "version": "0.1.4", 
     "fullName": "Originz", 
     "id": "jid1-1Rwfet7lgMYsBQ", 
     "description": "A source viewer that enables you to view not only page's HTML source but also style sheets and scripts.",
